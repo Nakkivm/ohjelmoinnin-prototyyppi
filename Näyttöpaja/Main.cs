@@ -14,7 +14,7 @@ namespace Näyttöpaja
     public partial class Main : Form
     {
         List<TextBox> signupTextBoxes = new List<TextBox>();
-        bool loggedIn = false;
+        bool loggedIn = false;       
         string loggedinUser = "";
         public Main()
         {
@@ -91,6 +91,8 @@ namespace Näyttöpaja
                 {
                     sCourses.Add(signupCourseSelection.CheckedItems[i].ToString());
                 }
+
+                string sLanguage = signupLanguageCombo.Text;
 
                 etusivuPanel.BringToFront();
             }

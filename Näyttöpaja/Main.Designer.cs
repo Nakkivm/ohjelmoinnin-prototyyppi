@@ -42,10 +42,11 @@
             this.NameBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.welcomePanel = new System.Windows.Forms.Panel();
-            this.WelcomeText = new System.Windows.Forms.Label();
-            this.createPanel = new System.Windows.Forms.Panel();
+            this.sendPalaute = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.PalauteBox = new System.Windows.Forms.RichTextBox();
+            this.WelcomeText = new System.Windows.Forms.Label();
+            this.createPanel = new System.Windows.Forms.Panel();
             this.signupLanguageCombo = new System.Windows.Forms.ComboBox();
             this.signupCourseTimes = new System.Windows.Forms.GroupBox();
             this.signupTentti1 = new System.Windows.Forms.RadioButton();
@@ -68,8 +69,6 @@
             this.signupNameBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.sendPalaute = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
             this.etusivuPanel.SuspendLayout();
             this.loginPanel.SuspendLayout();
             this.welcomePanel.SuspendLayout();
@@ -218,6 +217,35 @@
             this.welcomePanel.Size = new System.Drawing.Size(655, 433);
             this.welcomePanel.TabIndex = 2;
             // 
+            // sendPalaute
+            // 
+            this.sendPalaute.Location = new System.Drawing.Point(549, 295);
+            this.sendPalaute.Name = "sendPalaute";
+            this.sendPalaute.Size = new System.Drawing.Size(103, 23);
+            this.sendPalaute.TabIndex = 25;
+            this.sendPalaute.Text = "Lähetä palautetta";
+            this.sendPalaute.UseVisualStyleBackColor = true;
+            this.sendPalaute.Click += new System.EventHandler(this.sendPalaute_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(395, 41);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(57, 18);
+            this.label14.TabIndex = 24;
+            this.label14.Text = "Palaute";
+            // 
+            // PalauteBox
+            // 
+            this.PalauteBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PalauteBox.Location = new System.Drawing.Point(398, 65);
+            this.PalauteBox.Name = "PalauteBox";
+            this.PalauteBox.Size = new System.Drawing.Size(255, 224);
+            this.PalauteBox.TabIndex = 23;
+            this.PalauteBox.Text = "";
+            // 
             // WelcomeText
             // 
             this.WelcomeText.AutoSize = true;
@@ -230,7 +258,6 @@
             // 
             // createPanel
             // 
-            this.createPanel.Controls.Add(this.label15);
             this.createPanel.Controls.Add(this.signupLanguageCombo);
             this.createPanel.Controls.Add(this.signupCourseTimes);
             this.createPanel.Controls.Add(this.label13);
@@ -254,25 +281,6 @@
             this.createPanel.Name = "createPanel";
             this.createPanel.Size = new System.Drawing.Size(656, 434);
             this.createPanel.TabIndex = 3;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(395, 41);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(57, 18);
-            this.label14.TabIndex = 24;
-            this.label14.Text = "Palaute";
-            // 
-            // PalauteBox
-            // 
-            this.PalauteBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PalauteBox.Location = new System.Drawing.Point(398, 65);
-            this.PalauteBox.Name = "PalauteBox";
-            this.PalauteBox.Size = new System.Drawing.Size(255, 224);
-            this.PalauteBox.TabIndex = 23;
-            this.PalauteBox.Text = "";
             // 
             // signupLanguageCombo
             // 
@@ -487,25 +495,6 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Tunnusten luonti";
             // 
-            // sendPalaute
-            // 
-            this.sendPalaute.Location = new System.Drawing.Point(549, 295);
-            this.sendPalaute.Name = "sendPalaute";
-            this.sendPalaute.Size = new System.Drawing.Size(103, 23);
-            this.sendPalaute.TabIndex = 25;
-            this.sendPalaute.Text = "Lähetä palautetta";
-            this.sendPalaute.UseVisualStyleBackColor = true;
-            this.sendPalaute.Click += new System.EventHandler(this.sendPalaute_Click);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(236, 337);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 13);
-            this.label15.TabIndex = 23;
-            this.label15.Text = "label15";
-            // 
             // Main
             // 
             this.ClientSize = new System.Drawing.Size(680, 458);
@@ -572,6 +561,5 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.RichTextBox PalauteBox;
         private System.Windows.Forms.Button sendPalaute;
-        private System.Windows.Forms.Label label15;
     }
 }
